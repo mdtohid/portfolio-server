@@ -10,8 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// user wrong authentication
-
+// check user and email
 async function sendBookingEmail(data) {
   // This is your API key that you retrieve from www.mailgun.com/cp (free up to 10K monthly emails)
   const auth = {
